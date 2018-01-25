@@ -23,10 +23,11 @@ class JianshuPipline(object):
     def process_item(self,item,spider):
         # 使用twisted将mysql插入变成异步执行
         query = self.dbpool.runInteraction(self.do_insert,item)
-        query.addErrback(self.handle_error,item,spider)#这里不往下传入item,spider，handle_error则不需接受,item,spider)
+        #这里不往下传入item,spider，handle_error则不需接受,item,spider)
+        query.addErrback(self.handle_error,item,spider)
 
     def do_insert(self,cursor,item):
-        sql = "INSERT INTO articles(author,title,times,url,admire,likes) VALUES(%s,%s,%s,%s,%s,%s)"
+        sql = "INSERT INTO articles(author,title,times,url,admire,likes) VALUES(%s,%s,%s,%s,%s,%s);"
         cursor.execute(sql,(item['author'],item['title'],item['times'],item['url'],item['admire'],item['likes']))
 
     def handle_error(self, failure, item, spider):

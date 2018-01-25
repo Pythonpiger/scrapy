@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/PycharmProjects/Test/.idea/Test.iml" filepath="$USER_HOME$/PycharmProjects/Test/.idea/Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/jianshu.iml" filepath="$PROJECT_DIR$/.idea/jianshu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spider/kehuan/.idea/kehuan.iml" filepath="$PROJECT_DIR$/../../spider/kehuan/.idea/kehuan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spider/mm131/.idea/mm131.iml" filepath="$PROJECT_DIR$/../../spider/mm131/.idea/mm131.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../spider/xiaohua/.idea/xiaohua.iml" filepath="$PROJECT_DIR$/../../spider/xiaohua/.idea/xiaohua.iml" />
     </modules>
   </component>
 </project>
